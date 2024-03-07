@@ -15,10 +15,13 @@ export default {
         accent2: '#E6F9AF'
       },
       spacing: {
-        'banner': '57rem'
+        'hero': '40rem',
       },
       backgroundImage: theme => ({
-        'home-bg': "url('/public/images/bg-about-us.jpg')",
+        'home-hero': "url('/public/images/bg-about-us.jpg')",
+        'about-hero': "url('/public/images/about-bg.jpg')",
+        'services-hero': "url('/public/images/bg-services.jpg')",
+        'contact-hero': "url('/public/images/bg-contact.jpg')",
       }),
     },
   },
