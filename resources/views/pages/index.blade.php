@@ -76,6 +76,10 @@
             <h1 class="text-4xl text-accent1 font-bold md:text-center">
                 Contact Us
             </h1>
+
+            <form action="#" method="POST">
+                
+            </form>
         </div>
     </section>
 
