@@ -1,7 +1,7 @@
 <div class="container-md bg-primary mx-auto px-4 py-2 relative md:flex md:justify-between">
     <div class="flex justify-between items-center">
         <figure>
-            <img src="{{ asset('images/logo.png') }}" alt="Logo" class="w-44">
+            <img src="{{ asset('/public/images/logo.png') }}" alt="Logo" class="w-44">
         </figure>
         <ion-icon name="menu" class="text-2xl text-white md:hidden" id="hamburger"></ion-icon>
     </div>

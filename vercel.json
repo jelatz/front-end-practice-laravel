@@ -1,13 +1,28 @@
 {
     "version": 2,
-      "framework": null,
     "functions": {
-        "api/index.php": { "runtime": "vercel-php@0.6.0" }
+        "api/*.php": {
+            "runtime": "vercel-php@0.6.0"
+        }
     },
-    "routes": [{
-        "src": "/(.*)",
-        "dest": "/api/index.php"
-    }],
+    "routes": [
+        {
+            "src": "/(.*)",
+            "dest": "/api/index.php"
+        },
+        {
+            "src": "/assets/:path*",
+            "dest": "/public/assets/:path*"
+        },
+        {
+            "src": "/css/:path*",
+            "dest": "/public/css/:path*"
+        },
+        {
+            "src": "/js/:path*",
+            "dest": "/public/js/:path*"
+        }
+    ],
     "env": {
         "APP_ENV": "production",
         "APP_DEBUG": "true",
